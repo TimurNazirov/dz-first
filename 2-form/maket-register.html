@@ -4,13 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация</title>
+    <style>
+      body {
+        font-family: Open Sans;
+        line-height: 100%;
+        background-color: #fffefe;
+      }
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #333333;
+      }
+      .button {
+        font-size: 18px;
+        font-weight: 400;
+
+        color: #089fe0;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #666666;
+      }
+      button {
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: #089fe0;
+      }
+      .label-company {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333333;
+      }
+
+      .agree {
+        font-size: 14px;
+        font-weight: 400;
+        color: #666666;
+      }
+    </style>
   </head>
   <body>
     <h1>Регистрация</h1>
     <p>У вас уже есть аккаунт? <a href="#" class="button">Войти</a></p>
     <form action="#">
       <div>
-        <label for="name-company">Моя компания</label>
+        <label for="name-company" class="label-company">Моя компания</label>
         <input
           type="text"
           name="name-company"
@@ -50,11 +90,11 @@
           required
         />
       </div>
-      <button type="submit">Зарегистироваться</button>
+      <button type="submit">Зарегистироваться &rightarrow;</button>
 
       <div>
         <input type="checkbox" id="agree" />
-        <label for="agree"
+        <label for="agree" class="agree"
           >Я прочитал и принимаю
           <a href="#" target="_blank">Условия пользования</a>
         </label>
