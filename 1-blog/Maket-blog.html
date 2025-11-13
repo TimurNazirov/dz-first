@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Блог</title>
+    <style>
+      body {
+        background-color: #374151;
+      }
+      nav a {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        color: #ffffff;
+        font-weight: 600;
+        line-height: 100%;
+        text-decoration: none;
+      }
+      input {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        color: #ffffff;
+        font-weight: 600;
+        line-height: 100%;
+        font-size: 16px;
+      }
+      h1 {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        text-align: center;
+      }
+      h2 {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 38px;
+        text-align: center;
+      }
+      .author-info {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+      }
+      #natalia {
+        width: 50px;
+        height: 50px;
+        top: 316px;
+        left: 640px;
+      }
+      #monitor {
+        width: 896px;
+        height: 594px;
+        top: 397px;
+        left: 272px;
+        border-radius: 5px;
+      }
+
+      .first {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 32px;
+        letter-spacing: 0%;
+      }
+      .second {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 30px;
+        letter-spacing: 0%;
+      }
+      footer {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#1" style="font-size: 18px">В</a>
+          </li>
+          <li><a href="#2" style="font-size: 18px">Мой блог</a></li>
+          <li><a href="#3" style="font-size: 16px">HTML и CSS</a></li>
+          <li><a href="#4" style="font-size: 16px">Frontend</a></li>
+          <li><a href="#5" style="font-size: 16px">Backend</a></li>
+        </ul>
+      </nav>
+      <label for="search"></label>
+      <input type="text" id="search" placeholder="Поиск" />
+    </header>
+    <main>
+      <article>
+        <h1>Frontend . <time datetime="2024-05-12">12 мая 2024 г.</time></h1>
+
+        <h2>Теория цвета - Как цвет влияет на поведение потребителей</h2>
+        <img src="./Ellipse 1.jpg" alt="Фото Натальи Васильевой" id="natalia" />
+        <div class="author-info">
+          <p>Наталья Васильева</p>
+          <p>Разработчик</p>
+        </div>
+
+        <img
+          src="./монитор.jpg"
+          alt="Фото компьютера на цветном фоне"
+          id="monitor"
+        />
+        <p class="first">
+          Теория цвета — это особенности эмоционального восприятия человеком тех
+          или иных цветовых решений. Цвета и различные их комбинации влияют на
+          психику человека, а значит, во многом определяют его поведение.
+          Маркетологи и веб-дизайнеры хорошо знают, что правильно подобранная
+          цветовая гамма сайта помогает привлечь и удержать внимание
+          пользователей, сформировать положительное отношение к продукту,
+          подтолкнуть посетителей к совершению целевых действий, повысить
+          конверсию.
+        </p>
+
+        <p class="second">
+          Универсального ответа на вопрос, как тот или иной цвет влияет на
+          разных людей, нет. Эмоциональная и поведенческая реакция каждого
+          человека зависит от личного опыта. Вместе с тем можно выделить
+          определенные закономерности влияния цветов на поведение пользователей.
+          В исследовании «Влияние цвета на маркетинг» (Impact of color on
+          marketing) говорится, что использование разных цветов может
+          существенно влиять на настроение и поведение потребителей.
+          Утверждается, что от 60 до 90% покупателей (в зависимости от категории
+          продукта) дают положительную или отрицательную оценку товару,
+          основываясь только на его цвете.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>Все права защищены &copy; 2024</p>
+    </footer>
+  </body>
+</html>
