@@ -5,100 +5,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация</title>
     <style>
-      body {
-        font-family: Open Sans;
-        line-height: 100%;
-        background-color: #fffefe;
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
       }
+
+      body {
+        background-color: pink;
+      }
+
+      main {
+        position: relative;
+        left: 429px;
+        right: 429px;
+        top: 225px;
+        bottom: 225px;
+        font-family: Open Sans;
+        background-color: #fffefe;
+        width: 582px;
+        height: 573px;
+        border-radius: 10px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       h1 {
         font-size: 36px;
         font-weight: 700;
+        text-align: center;
         color: #333333;
+        width: 383px;
+        height: 54px;
+        margin: 72px auto 0;
       }
-      .button {
-        font-size: 18px;
-        font-weight: 400;
 
-        color: #089fe0;
-      }
       p {
         font-size: 18px;
         font-weight: 400;
+        text-align: center;
         color: #666666;
+        margin: 0 auto 47px;
       }
       button {
         font-size: 18px;
         font-weight: 400;
         color: #ffffff;
         background-color: #089fe0;
+        margin: 0 auto 22px;
+        width: 394px;
+        height: 44px;
+        border: 1px solid #089fe0;
+        border-radius: 5px;
       }
-      .label-company {
+
+      .form-group {
+        width: 394px;
+        display: flex;
+        margin: 0 auto 21px;
+      }
+
+      .form-group input {
+        height: 44px;
+        font-weight: 700;
         font-size: 16px;
-        font-weight: 600;
+        line-height: undefined;
+        text-align: left;
         color: #333333;
+        flex: 1;
+        box-sizing: border-box;
+        border: 1px solid #f5f5f5;
+        border-radius: 5px;
+      }
+
+      .name {
+        width: 394px;
+        display: flex;
+        margin: 0 auto 22px;
+      }
+
+      .name input {
+        flex: 1;
+        height: 44px;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 16px;
+        text-align: left;
+        color: #999999;
+        border: 1px solid #f5f5f5;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .email {
+        display: flex;
+        width: 394px;
+      }
+
+      .email input {
+        height: 44px;
+        flex: 1;
+        margin: 0 auto 22px;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 16px;
+        text-align: left;
+        color: #999999;
+        border: 1px solid #f5f5f5;
+        border-radius: 5px;
+      }
+
+      .button {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        color: #089fe0;
       }
 
       .agree {
+        display: flex;
+        width: 371px;
+      }
+
+      .agree input {
+        flex: 1;
+        height: 19px;
         font-size: 14px;
         font-weight: 400;
         color: #666666;
+        text-align: left;
+        margin: 0 auto 97px;
       }
     </style>
   </head>
   <body>
-    <h1>Регистрация</h1>
-    <p>У вас уже есть аккаунт? <a href="#" class="button">Войти</a></p>
-    <form action="#">
-      <div>
-        <label for="name-company" class="label-company">Моя компания</label>
-        <input
-          type="text"
-          name="name-company"
-          id="name-company"
-          placeholder="Моя компания"
-        />
-      </div>
+    <main>
+      <h1>Регистрация</h1>
+      <p>У вас уже есть аккаунт? <a href="#" class="button">Войти</a></p>
+      <form action="#">
+        <div class="form-group">
+          <label for="name-company" class="label-company"></label>
+          <input
+            type="text"
+            name="name-company"
+            id="name-company"
+            placeholder="Моя компания"
+            class="label-company"
+          />
+        </div>
 
-      <div>
-        <label for="first-name">Имя</label>
-        <input
-          type="text"
-          name="first-name"
-          id="first-name"
-          placeholder="Имя"
-          required
-        />
-      </div>
-      <div>
-        <label for="second-name">Фамилия</label>
-        <input
-          type="text"
-          name="second-name"
-          id="second-name"
-          placeholder="Фамилия"
-          required
-        />
-      </div>
+        <div class="name">
+          <label for="first-name"></label>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="Имя"
+            required
+          />
 
-      <div>
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="E-mail"
-          required
-        />
-      </div>
-      <button type="submit">Зарегистироваться &rightarrow;</button>
+          <label for="second-name"></label>
+          <input
+            type="text"
+            name="second-name"
+            id="second-name"
+            placeholder="Фамилия"
+            required
+          />
+        </div>
 
-      <div>
-        <input type="checkbox" id="agree" />
-        <label for="agree" class="agree"
-          >Я прочитал и принимаю
-          <a href="#" target="_blank">Условия пользования</a>
-        </label>
-      </div>
-    </form>
+        <div class="email">
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+        </div>
+        <button type="submit">Зарегистироваться &rightarrow;</button>
+
+        <div class="agree">
+          <input type="checkbox" id="agree" />
+          <label for="agree" class="agree"
+            >Я прочитал и принимаю
+            <a href="#" target="_blank">Условия пользования</a>
+          </label>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
