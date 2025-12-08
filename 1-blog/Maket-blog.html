@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <title>Блог</title>
     <style>
+      * {
+      }
       body {
         background-color: #374151;
+        width: 1440px;
+      }
+
+      header {
+        display: flex;
       }
 
       nav a {
@@ -15,19 +22,42 @@
         color: #ffffff;
         line-height: 100%;
         text-decoration: none;
+        padding: 0;
       }
 
       ul {
         list-style-type: none;
+        display: flex;
+        margin: 0;
       }
 
       ul li:nth-child(1) {
         font-weight: 700;
-        text-align: left;
+        text-align: center;
         width: 35px;
         height: 35px;
         background-color: #4b5563;
         border-radius: 3px;
+        margin: 72px 11px 73px 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      ul li:nth-child(2) {
+        margin: 80px 77px 0 0;
+      }
+
+      ul li:nth-child(3) {
+        margin: 80px 52px 0 0;
+      }
+
+      ul li:nth-child(4) {
+        margin: 80px 39px 0 0;
+      }
+
+      ul li:nth-child(5) {
+        margin: 80px 346px 0 0;
       }
 
       input {
@@ -42,6 +72,7 @@
         height: 40px;
         background-color: rgba(31, 41, 55, 0.6);
         border-radius: 100px;
+        margin: 71px 180px 69px 0;
       }
 
       h1 {
@@ -54,6 +85,7 @@
         height: 16px;
         padding: 0px;
         margin: 0 auto 14px auto;
+        color: #ffffff;
       }
 
       h2 {
@@ -63,10 +95,9 @@
         line-height: 38px;
         text-align: center;
         margin: 0 auto 30px auto;
+        color: #ffffff;
       }
-      div {
-        margin-bottom: 69px;
-      }
+
       footer {
         font-family: Roboto;
         font-weight: 400;
@@ -75,28 +106,26 @@
         letter-spacing: 0%;
         text-align: center;
         margin-bottom: 77px;
+        color: #ffffff;
       }
 
       #natalia {
         width: 50px;
         height: 50px;
-        top: 316px;
-        left: 640px;
       }
 
       #monitor {
         width: 896px;
         height: 594px;
-        top: 397px;
-        left: 272px;
         border-radius: 5px;
-        margin: auto auto 69px auto;
+        margin: 0 272px 69px;
       }
 
-      .author-info img,
-      .author-info .caption {
-        display: inline-block;
-        /* vertical-align: middle; Применяем ко всем элементам в ряду */
+      .author-info {
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        margin-bottom: 28px;
       }
       .caption {
         margin-left: 16px;
@@ -105,6 +134,12 @@
         font-size: 16px;
         line-height: 28px;
         width: 148px;
+      }
+
+      .text {
+        width: 708px;
+        margin: 0 365px;
+        color: #ffffff;
       }
 
       .first {
@@ -120,8 +155,11 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 30px;
-        margin-bottom: 103px;
         text-align: left;
+      }
+
+      .second1 {
+        margin-bottom: 103px;
       }
     </style>
   </head>
@@ -132,7 +170,11 @@
           <li>
             <a href="#1" style="font-size: 18px">В</a>
           </li>
-          <li><a href="#2" style="font-size: 18px">Мой блог</a></li>
+          <li>
+            <a href="#2" style="font-size: 18px; width: 80px; height: 21px"
+              >Мой блог</a
+            >
+          </li>
           <li><a href="#3" style="font-size: 16px">HTML и CSS</a></li>
           <li><a href="#4" style="font-size: 16px">Frontend</a></li>
           <li><a href="#5" style="font-size: 16px">Backend</a></li>
@@ -145,7 +187,7 @@
       <article>
         <h1>Frontend . <time datetime="2024-05-12">12 мая 2024 г.</time></h1>
 
-        <h2>Теория цвета - Как цвет влияет на поведение потребителей</h2>
+        <h2>Теория цвета - Как цвет влияет на поведение <br />потребителей</h2>
 
         <div class="author-info">
           <img
@@ -153,40 +195,45 @@
             alt="Фото Натальи Васильевой"
             id="natalia"
           />
+
           <div class="caption">
             Наталья Васильева
             <br />Разработчик
           </div>
         </div>
-
         <img
           src="./монитор.jpg"
           alt="Фото компьютера на цветном фоне"
           id="monitor"
         />
-        <p class="first">
-          Теория цвета — это особенности эмоционального восприятия человеком тех
-          или иных цветовых решений. Цвета и различные их комбинации влияют на
-          психику человека, а значит, во многом определяют его поведение.
-          Маркетологи и веб-дизайнеры хорошо знают, что правильно подобранная
-          цветовая гамма сайта помогает привлечь и удержать внимание
-          пользователей, сформировать положительное отношение к продукту,
-          подтолкнуть посетителей к совершению целевых действий, повысить
-          конверсию.
-        </p>
+        <div class="text">
+          <p class="first">
+            Теория цвета — это особенности эмоционального восприятия человеком
+            тех или иных цветовых решений. Цвета и различные их комбинации
+            влияют на психику человека, а значит, во многом определяют его
+            поведение. Маркетологи и веб-дизайнеры хорошо знают, что правильно
+            подобранная цветовая гамма сайта помогает привлечь и удержать
+            внимание пользователей, сформировать положительное отношение к
+            продукту, подтолкнуть посетителей к совершению целевых действий,
+            повысить конверсию.
+          </p>
 
-        <p class="second">
-          Универсального ответа на вопрос, как тот или иной цвет влияет на
-          разных людей, нет. Эмоциональная и поведенческая реакция каждого
-          человека зависит от личного опыта. Вместе с тем можно выделить
-          определенные закономерности влияния цветов на поведение пользователей.
-          В исследовании «Влияние цвета на маркетинг» (Impact of color on
-          marketing) говорится, что использование разных цветов может
-          существенно влиять на настроение и поведение потребителей.
-          Утверждается, что от 60 до 90% покупателей (в зависимости от категории
-          продукта) дают положительную или отрицательную оценку товару,
-          основываясь только на его цвете.
-        </p>
+          <p class="second">
+            Универсального ответа на вопрос, как тот или иной цвет влияет на
+            разных людей, нет. Эмоциональная и поведенческая реакция каждого
+            человека зависит от личного опыта. Вместе с тем можно выделить
+            определенные закономерности влияния цветов на поведение
+            пользователей.
+          </p>
+          <p class="second second1">
+            В исследовании «Влияние цвета на маркетинг» (Impact of color on
+            marketing) говорится, что использование разных цветов может
+            существенно влиять на настроение и поведение потребителей.
+            Утверждается, что от 60 до 90% покупателей (в зависимости от
+            категории продукта) дают положительную или отрицательную оценку
+            товару, основываясь только на его цвете.
+          </p>
+        </div>
       </article>
     </main>
     <footer>
