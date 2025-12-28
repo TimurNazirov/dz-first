@@ -1,0 +1,63 @@
+/* header */
+
+header {
+  background: var(--color-primary);
+  height: 846px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.header__wrapper {
+  max-width: var(--layout-width);
+  margin: 0 auto;
+  padding: 40px 24px 0;
+  /* так мы сохранили ширину и чтобы заголовки не прижимались к границам */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__login {
+  width: 207px;
+  height: 48px;
+  padding: 12px 32px;
+  border-radius: 34px;
+  border: 1px solid var(--color-button-text);
+}
+
+.header__login-text {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
+  color: var(--color-primary);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.header__mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Menu */
+
+.menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--color-button-text);
+  opacity: 80%;
+}
+
+.menu-item-review {
+  opacity: 100%;
+}
