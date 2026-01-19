@@ -1,15 +1,17 @@
-function convertRubles(amount, currency) {
-  const usdRate = 95;
-  const eurRate = 102;
+const rates = {
+  RUB: 1,
+  USD: 95,
+  EUR: 103,
+  CNY: 13,
+};
 
-  if (currency === "USD") {
-    let result = amount / usdRate;
-    return `${amount} руб.= ${result.toFixed(2)} $`;
-  } else if (currency === "EUR") {
-    let result = amount / eurRate;
-    return `${amount} руб.= ${result.toFixed(2)} €`;
-  } else {
+function convertCurrency(amount, from, to) {
+  if (!rates[from] || !rates[to]) {
     return null;
   }
+  const result = (amount * rates[from]) / rates[to];
+  return result.toFixed(2);
 }
-console.log(convertRubles(10000, "UD"));
+
+console.log(convertCurrency(100, "USD", "RUB"));
+console.log(convertCurrency(100, "USD", "EUR"));
