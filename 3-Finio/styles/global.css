@@ -1,0 +1,37 @@
+:root {
+  --color-black: #000000;
+  --color-text: #4e5d7c;
+  --color-primary: #357efe;
+  --color-button-text: #ffffff;
+  --color-profit: #1abc9c;
+  --color-yellow: #ffc736;
+  --color-footer: #1a1d25;
+
+  --layout-width: 1392px;
+  --layout-tariffs-width: 1155px;
+
+  --max-width: 1920px;
+}
+
+* {
+  font-family: "Inter";
+}
+
+body {
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--color-black);
+}
+
+a {
+  text-decoration: none;
+}
