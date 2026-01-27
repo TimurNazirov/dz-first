@@ -1,15 +1,14 @@
-function createCleaner(limit) {
-  return function (numbers) {
-    const arrayClean = [];
-    for (const num of numbers) {
-      if (num < limit) {
-        arrayClean.push(num);
-      }
+function createCleaner(arr, shouldDelete) {
+  const arrayClean = [];
+  for (const num of arr) {
+    if (!shouldDelete(num)) {
+      arrayClean.push(num);
     }
-    return arrayClean;
-  };
+  }
+  return arrayClean;
 }
 
-const cleanBigNumbers = createCleaner(6);
-const myData = [1, 10, 3, 5, 8, 2];
-console.log(cleanBigNumbers(myData));
+const numbers = [1, 2, 5, 7, 10];
+const isMoreThanFive = (num) => num > 5;
+const cleanArr = createCleaner(numbers, isMoreThanFive);
+console.log(cleanArr);
