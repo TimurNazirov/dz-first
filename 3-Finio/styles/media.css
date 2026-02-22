@@ -1,0 +1,482 @@
+@media (max-width: 1150px) {
+  .hero__right {
+    display: none;
+  }
+  .menu {
+    display: none;
+    /* при уменьшении меню будет скрываться */
+  }
+
+  .header__login {
+    display: none;
+    /* при уменьшении вход будет скрываться */
+  }
+  .header__mobile-menu-button {
+    display: block;
+  }
+
+  .separator_375px {
+    display: block;
+    width: 1100px;
+    margin: 0 auto;
+    height: 1px;
+    color: var(--color-button-text);
+    opacity: 16%;
+  }
+
+  .tariffs {
+    justify-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .tariffs__wrapper {
+    grid-template-columns: repeat(2, 369px);
+    height: auto;
+    gap: 24px;
+    width: auto;
+    margin-bottom: 64px;
+  }
+}
+
+@media (max-width: 800px) {
+  .tariffs {
+    justify-items: start;
+    max-width: 369px;
+  }
+  .tariffs__h1 {
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .tariffs__intro {
+    font-weight: 500;
+    font-size: 17px;
+    text-align: left;
+    width: 100%;
+    display: grid;
+    margin-bottom: 32px;
+  }
+  .tariffs__wrapper {
+    grid-template-columns: 369px;
+    justify-content: start;
+  }
+
+  .tariffs__one .tariffs__six .tariffs__twelve {
+    margin: 48px 24px;
+    width: 328px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    width: 375px;
+    height: 10481px;
+  }
+
+  header {
+    width: 100%vw;
+  }
+
+  .section__header {
+    margin-top: 32px;
+  }
+
+  .hero__button {
+    margin: 0 24px 56px;
+    width: 328px;
+    height: 48px;
+  }
+
+  .hero__h1 {
+    margin: 0 24px 32px;
+    font-size: 32px;
+    line-height: 120%;
+    width: 328px;
+    height: 152px;
+    padding: 0;
+  }
+
+  .hero__left_logo {
+    width: 264px;
+    height: 67px;
+    margin-left: 24px;
+  }
+
+  .hero__right {
+    display: none;
+  }
+
+  .analysis {
+    flex-direction: column;
+    gap: 32px;
+    width: 328px;
+    height: 214px;
+  }
+
+  .analysis__row {
+    margin-bottom: 32px;
+  }
+
+  .tag__analysis {
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  .grafics__balance {
+    flex-direction: column-reverse;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+
+  .grafics__balance_right {
+    width: 357px;
+    height: 218px;
+  }
+
+  .grafics__balance_left {
+    width: 328px;
+    height: 225px;
+    padding: 0px;
+    margin-left: 24px;
+  }
+
+  .grafics__balance_left_h2 {
+    font-size: 32px;
+    line-height: 120%;
+    width: 328px;
+    margin: 0 0 24px;
+  }
+
+  .grafics__balance_left_p {
+    font-size: 18px;
+    line-height: 140%;
+    width: 310px;
+  }
+
+  /* grafics__report */
+
+  .grafics__report {
+    flex-direction: column;
+    gap: 32px;
+    margin: 48px 24px;
+  }
+
+  .grafics__report_left_img {
+    width: 328px;
+    height: 226px;
+  }
+
+  .grafics__report_right {
+    width: 328px;
+    height: 263px;
+  }
+
+  .grafics__report_right_h2 {
+    font-size: 32px;
+    line-height: 120%;
+    margin: 0 0 24px;
+    width: 328px;
+  }
+
+  .grafics__report_right_p {
+    width: 328px;
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  /* grafics__profit */
+
+  .grafics__profit {
+    flex-direction: column-reverse;
+    margin: 48px 24px;
+    gap: 32px;
+  }
+
+  .grafics__profit_right_img {
+    width: 328px;
+  }
+
+  .grafics__profit_left_h2 {
+    width: 328px;
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 24px;
+    margin: 0 0 24px;
+  }
+
+  .grafics__profit_left_p {
+    font-size: 18px;
+    line-height: 140%;
+    width: 305px;
+  }
+
+  /* grafics__expenses */
+
+  .grafics__expenses {
+    flex-direction: column;
+    margin: 48px 24px;
+    gap: 32px;
+  }
+
+  .grafics__expenses_left {
+    width: 328px;
+  }
+
+  .grafics__expenses_left_common_img {
+    width: 234px;
+    height: 190px;
+  }
+
+  .grafics__expenses_left_extra {
+    width: 229px;
+    height: 50px;
+    top: 53px;
+    left: 98px;
+  }
+
+  .grafics__expenses_right_h2 {
+    width: 328px;
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 24px;
+    margin: 0 0 24px;
+  }
+
+  .grafics__expenses_right_p {
+    font-size: 18px;
+    line-height: 140%;
+    width: 305px;
+  }
+
+  /* Section__safe */
+
+  .section__safe {
+    width: 375px;
+  }
+
+  .safe__header {
+    padding-top: 64px;
+    margin-bottom: 48px;
+    font-size: 36px;
+    line-height: 120%;
+  }
+
+  .safe__header_p {
+    width: 328px;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 32px;
+  }
+
+  .safe__common_375_img {
+    display: block;
+    width: 328px;
+    height: 182px;
+    margin: 0 24px;
+  }
+
+  .safe__excel_img,
+  .safe__report_img {
+    display: none;
+  }
+
+  .safe__images {
+    margin-bottom: 54px;
+  }
+
+  .safe__header_button {
+    margin: 0 24px;
+    width: 328px;
+    height: 48px;
+  }
+
+  .safe__desc {
+    flex-direction: column;
+    gap: 48px;
+    width: 328px;
+    margin: 0 24px;
+  }
+
+  /* Section__it-security */
+  .section__it-security {
+    flex-direction: column;
+    width: 328px;
+    height: 801px;
+    gap: 32px;
+    margin: 64px 24px;
+  }
+
+  .it-security__h3 {
+    font-size: 24px;
+  }
+
+  .it-security__img {
+    width: 64px;
+    height: 64px;
+  }
+
+  /* Section__mobilever */
+
+  .section__mobilever {
+    margin: 48px 24px 64px;
+  }
+
+  .section__mobilever_h3 {
+    font-size: 36px;
+    line-height: 120%;
+    text-align: left;
+  }
+
+  .section__mobilever_p {
+    text-align: left;
+  }
+
+  .section__mobilever_img {
+    width: 678px;
+    height: 450px;
+  }
+
+  /* Section__support */
+  .section__support {
+    flex-direction: column-reverse;
+    width: 375px;
+    height: 813px;
+    gap: 32px;
+  }
+
+  .section__support_img {
+    width: 327px;
+    height: 279px;
+    margin: 0 24px;
+  }
+
+  .section__support_h3 {
+    font-size: 36px;
+    line-height: 120%;
+    text-align: left;
+    margin: 64px 24px 24px;
+  }
+
+  .section__support_top {
+    font-size: 17px;
+    line-height: 140%;
+    text-align: left;
+    margin: 0 24px 32px;
+    width: 328px;
+  }
+
+  .section__support_social {
+    margin: 0 24px 16px;
+  }
+
+  .section__support_bottom {
+    margin: 32px 24px 0;
+    width: 328px;
+  }
+
+  /* Tariffs */
+
+  .tariffs__wrapper {
+    grid-template-columns: 328px;
+  }
+
+  .tariffs__twelve_blue {
+    width: 328px;
+  }
+
+  .tariffs__twelve {
+    margin: 48px 24px;
+  }
+
+  .tariffs__h1 {
+    margin-top: 48px;
+  }
+
+  .tariffs__intro {
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  .tariffs__intro_p {
+    text-align: left;
+    margin: 0;
+  }
+
+  .tariffs__one {
+    margin-top: 48px;
+    width: 280px;
+    height: 340px;
+  }
+}
+
+/* Section__feedback */
+.section__feedback_h2 {
+  font-size: 36px;
+  line-height: 1.2000000476837158;
+  margin: 0 24px 32px;
+  text-align: left;
+}
+
+.section__feedback {
+  flex-direction: column-reverse;
+  gap: 48px;
+  width: 328px;
+  height: 609px;
+}
+
+.section__feedback_img {
+  width: 328px;
+  height: 249px;
+  border-radius: 0 0 10px 10px;
+  box-sizing: border-box;
+}
+
+.section__feedback_img_left,
+.section__feedback_img_right {
+  display: none;
+}
+
+.section__feedback_left {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.section__feedback_h3 {
+  width: 280px;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: left;
+  margin: 0 24px 24px;
+}
+
+.section__feedback_p_top,
+.section__feedback_p_bottom {
+  margin-left: 24px;
+}
+
+/* Footer */
+
+.section__footer {
+  width: 375px;
+  height: 984px;
+}
+
+.section__footer_top {
+  flex-direction: column;
+  gap: 48px;
+}
+
+.section__footer_common {
+  margin: 64px 24px;
+}
+
+.section__footer__bottom {
+  flex-direction: column-reverse;
+  gap: 24px;
+  margin-top: 48px;
+}
